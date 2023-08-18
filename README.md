@@ -1,7 +1,7 @@
 # UNIFESP
 
-Exercícios de programação da faculdade divididos por disciplina.
-Programming exercises for college divided by discipline.
+Exercícios de programação da faculdade divididos por disciplina. / Programming exercises for college divided by discipline.
+##
 
 LP - Lógica de Programação (1º Semestre) - Prof. Dr. Otavio Augusto Lazzarini Lemos:<br>
      <https://wiki.python.org.br/EstruturaSequencial><br>
