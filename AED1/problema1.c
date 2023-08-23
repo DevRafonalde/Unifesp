@@ -33,6 +33,4 @@ int main() {
             printf("%c: %d\n", toupper('a' + i), frequencias[i]);
         }
     }
-
-    return 0;
 }
