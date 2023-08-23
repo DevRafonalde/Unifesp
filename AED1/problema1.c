@@ -14,9 +14,8 @@ int main() {
 
     // Nesse for eu pego um caractere da string, transformo para minúsculo e adiciono 1 à frequência dele
     for (int i = 0; string[i]; i++) {
-        string[i] = tolower(string[i]);
-        
         if (isalpha(string[i])) {
+        string[i] = tolower(string[i]);
             // Aqui, ao manipular a frequência, eu subtraio 'a' do caractere lido. Vamos considerar um exemplo:
             // Se você tem a letra 'c' e quer armazenar sua frequência no array "frequencias", você precisará convertê-la para um índice apropriado.
             // O caractere 'c' corresponde ao número 99 na tabela ASCII, e a letra 'a' corresponde ao número 97.
