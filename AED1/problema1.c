@@ -30,7 +30,7 @@ int main() {
             // Da mesma forma, ao exibir as letras aqui, precisamos reverter o processo para obter a letra correspondente ao índice.
             // Somamos o valor do índice ao caractere 'a' para obter a letra correspondente. Se o índice for 2, somar 'a' (97) a 2 resultará em 99, que é o código ASCII para a letra 'c'.
             // E assim eu faço para imprimir em ordem lexicográfica
-            printf("%c: %d\n", toupper('a' + i), frequencias[i]);
+            printf("%c %d\n", toupper('a' + i), frequencias[i]);
         }
     }
 }
