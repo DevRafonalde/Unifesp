@@ -12,4 +12,4 @@ LP - Lógica de Programação (1º Semestre) - Prof. Dr. Otavio Augusto Lazzarin
      <https://wiki.python.org.br/ExerciciosComStrings><br>
      <https://wiki.python.org.br/ExerciciosFuncoes><br>
 
-AED 1 - Algoritmos e Estruturas de Dados 1 (2º Semestre) - Profª. Dra. Regina Célia Coelho:<br>
+AED 1 - Algoritmos e Estruturas de Dados 1 (2º Semestre) - Profª. Dra. Regina Célia Coelho: Exercícios no Judge da UNIFESP<br>
