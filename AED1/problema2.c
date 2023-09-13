@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 
 struct Corredor {
     int numeroCarro;
@@ -51,27 +52,34 @@ int main() {
         if (ultrapassagem >= 1 && ultrapassagem <= participantes) {
             int carroUltrpassou;
             int carroUltrapassado;
+            bool primeiroLugar = false;
 
             for (int i = 0; i < participantes; i++) {
                 if (posicoes[i] == ultrapassagem) {
-                    carroUltrpassou = posicoes[i];
-                    carroUltrapassado = posicoes[i - 1];
+                    if (i == 0) {
+                        primeiroLugar = true;
+                    } else {
+                        carroUltrpassou = posicoes[i];
+                        carroUltrapassado = posicoes[i - 1];
+                    }
                 }
             }
-            
-            for (int i = 0; i < participantes; i++) {
-                if (corredores[i].numeroCarro == carroUltrpassou) {
-                    corredores[i].posicaoAtual--;
+
+            if (!primeiroLugar) {
+                for (int i = 0; i < participantes; i++) {
+                    if (corredores[i].numeroCarro == carroUltrpassou) {
+                        corredores[i].posicaoAtual--;
+                    }
+                    if (corredores[i].numeroCarro == carroUltrapassado) {
+                        corredores[i].posicaoAtual++;
+                    }
                 }
-                if (corredores[i].numeroCarro == carroUltrapassado) {
-                    corredores[i].posicaoAtual++;
-                }
-            }
-            
-            for (int i = 0; i < participantes; i++) {
-                if (posicoes[i] == ultrapassagem) {
-                    posicoes[i - 1] = carroUltrpassou;
-                    posicoes[i] = carroUltrapassado;
+                
+                for (int i = 0; i < participantes; i++) {
+                    if (posicoes[i] == ultrapassagem) {
+                        posicoes[i - 1] = carroUltrpassou;
+                        posicoes[i] = carroUltrapassado;
+                    }
                 }
             }
         }
